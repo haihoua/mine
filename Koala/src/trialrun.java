@@ -97,8 +97,8 @@ public class trialrun {
     c.gridx = 1;
     c.gridy = 2;
 
-    pan = new JPanel();
-    icon = new ImageIcon("image/person.jpg","User");
+    pan = new JPanel(new FlowLayout(FlowLayout.LEFT));
+    icon = new ImageIcon("image/villian1.gif","Enemy");
     label = new JLabel(icon,JLabel.LEFT);
     label2 = new JLabel("NAME",JLabel.CENTER);
     pan.setBorder(new LineBorder(Color.BLACK));
@@ -106,7 +106,7 @@ public class trialrun {
     pan.add(label);
     pan.add(label2);
     
-    pan1 = new JPanel();
+    pan1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
     icon = new ImageIcon("image/plus.jpg","Health");
     label = new JLabel(icon,JLabel.LEFT);
     label2 = new JLabel("Health");
@@ -115,7 +115,7 @@ public class trialrun {
     pan1.add(label);
     pan1.add(label2);
     
-    pan2 = new JPanel();
+    pan2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
     icon = new ImageIcon("image/Diamond-Sword-icon.png","Attack");
     label = new JLabel(icon,JLabel.LEFT);
     label2 = new JLabel("Attack");
@@ -124,7 +124,7 @@ public class trialrun {
     pan2.add(label);
     pan2.add(label2);
     
-   pan3 = new JPanel();
+   pan3 = new JPanel(new FlowLayout(FlowLayout.LEFT));
     icon = new ImageIcon("image/shield.png","Defense");
     label = new JLabel(icon,JLabel.LEFT);
     label2 = new JLabel("Defense");
